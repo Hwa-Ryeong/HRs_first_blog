@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HR's First Blog</title>
+        <link rel="stylesheet" href="/css/stylesheet.css">
+    </head>
+
+    <body>
+        <nav class="index_nav">
+            <a href="/" class="logo_index">HR's First Blog</a>
+            
+            <a id='index_logout' href='/logout'>Logout</a>
+            <a class="up top_login" href='/login'>Login</a>
+            <a class="up top_to_lists" href="/index">Blog Lists</a>
+            
+        </nav>
+        <div id='new_whole'>
+            <div class='new_container'>
+                <div class='new_image_holder'>
+                    <h1>Create New Post</h1>
+                    
+                    <!-- <h2>Start typing in here</h2> -->
+                    <form class="new_title" action="/create" method="post">
+                        <h3>Title</h3>
+                        <input class="new_titles_input"type="text" name="title">
+                       
+
+                        <h3>Preview</h3>
+                        <input class="new_previews_input"type="text" name="preview">
+                 
+
+                        <h3>Content</h3>
+                        <textarea name="content"></textarea>
+                        <br>
+                        <input  class="new_submit_input"type="submit" value="post">
+                    </form>
+    
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HR's First Blog</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+
+<body>
+  
+    <nav class="edit_nav">
+        <a href="/" class="logo_edit">HR's First Blog</a>
+        
+        <a id='edit_logout' href='#'>Logout</a>
+        <a class="up top_login" href='/login'>Login</a>
+    </nav>
+
+    <div class="edit_whole">
+        <div class="edit_container">
+            <h1>Edit Page</h1>
+            <h2>Start Editing</h2>
+        </div>
+
+        <form action="/update/<%=post.id%>" methods="post">
+            Title
+            <input name='itemName' value='<%=post.title%>' type="text">
+            <input type='submit' value="update">
+        </form>
+
+        <form action="/update/<%=post.id%>" methods="post">
+            Preview
+            <input name='itemName' value='<%=post.preview%>' type="text">
+            <input type='submit' value="update">
+        </form>
+
+        <form action="/update/<%=post.id%>" methods="post">
+            Content
+            <input name='itemName' value='<%=post.content%>' type="text">
+            <input type='submit' value="update">
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>

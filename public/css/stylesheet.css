@@ -1,0 +1,410 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+/* top.ejs*/
+
+
+.top_logo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    padding: 0 10px;
+    margin-left: 50px;
+    border: 3px solid lightsalmon;
+    float: left;
+    line-height: 70px;
+    opacity: 0.9;    
+}
+
+.logo_index {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+ .up {
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-size: 20px;
+     float: right;
+     padding-right: 50px;
+     line-height: 90px;
+     text-decoration: none;
+     
+ }
+
+ .top_to_lists {
+     color: rgb(90 173 214);
+ }
+ .top_post {
+     color: rgb(221, 119, 119);
+ }
+ .top_signup {
+     color: rgb(216 96 178);
+ }
+
+.top_login {
+    color: rgb(164, 224, 73);     
+}
+
+ .top_nav {
+     height: 76px;
+     background-color:lavenderblush;
+ }
+
+
+ .top_whole {
+     width: 900px;
+     margin: 0 auto;
+ }
+
+.top_container {
+    text-align: center;
+    height: 600px;
+    background-image: url("/images/top.jpeg");
+    background-size: cover;
+}
+
+.top_container h1 {
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 40px;
+    letter-spacing: 2px;
+}
+
+
+ /* top.ejs end*/
+
+ /* index.ejs */
+
+ .logo_index{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    padding: 0 10px;
+    margin-left: 50px;
+    border: 3px solid lightsalmon;
+    float: left;
+    line-height: 70px;
+    opacity: 0.9;   
+    text-decoration: none;
+    color: black; 
+}
+
+.index_nav {
+     height: 76px;
+     background-color:lavenderblush;
+}
+
+
+
+#index_logout {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    float: right;
+    padding-right: 50px;
+    text-decoration: none;
+    color: rgb(221, 119, 119);
+    line-height: 90px;
+}
+
+#index_newpost {
+    background-color: rgb(221, 119, 119);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    float: right;
+    text-decoration: none;
+    color:black;
+    margin-bottom: 30px;
+    height: 50px;
+    border-radius: 30px;
+    width: 90px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+}
+.blog_lists {
+    background-image: url('/images/index.jpeg');
+    height: 800px;
+    max-width: 800px;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.index_container {
+    /* border: 1px solid red; */
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.container_header {
+    margin: 20px 0 ;
+}
+.index_title {
+    font-size: 40px;
+    text-align: center;
+   
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.table_top {
+    background-color: rgb(176, 203, 238);
+    text-align: left;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 50px;
+    line-height: 50px;
+
+}
+.table_wrapper {
+    border: 1px solid orange;
+    
+}
+
+.table_body {
+    background-color:rgb(217, 235, 247)
+    
+}
+
+.table_body li {
+  height: 100px;
+  border: 3px solid #f0f4f9;
+  border-top: none;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+.post {
+    font-size: 17px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(65, 63, 63);
+    
+
+}
+/* index.eks end */
+
+/* new.ejs start*/
+
+#new_whole {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.new_container h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.new_container {
+    
+    background-image: url('/images/new.jpeg');  
+    height: 600px;
+    background-size: cover;
+}
+
+.new_image_holder {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.new_title h3 {
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:  rgb(77, 73, 72);
+    margin: 10px 0;
+   
+    
+}
+
+.new_titles_input {
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+    border: 3px solid rgb(219, 182, 16);
+}
+
+.new_previews_input {
+    width: 600px;
+    height: 40px;
+    border-radius: 15px;
+    border: 3px solid  rgb(219, 182, 16);
+}
+.new_title textarea{
+    width: 600px;
+    height: 200px;
+    border-radius: 15px;
+    border: 3px solid  rgb(219, 182, 16);
+}
+
+.new_submit_input {
+    margin: 20px;
+    border-radius: 15px;
+    border: 3px solid  rgb(219, 16, 87);
+    height: 40px;
+    width: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: rgb(77, 73, 72);
+}
+/* new.ejs end*/
+
+/* login.ejs start*/
+.login_whole {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.login_container {
+    background-image: url('/images/login.jpeg');
+    height: 600px;
+    background-size: cover;
+}
+
+.login_image_holder {
+    height: 100%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0);
+}
+
+.login_image_holder h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 30px;
+}
+
+.login_form {
+    padding: 20px;
+}
+.login_form p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: rgb(245, 153, 117);
+}
+
+.login {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 40px;
+    border: 3px solid  rgb(237, 238, 162);
+    border-radius: 50px;
+}
+
+.login_submit_input {
+    color:  rgb(245, 153, 117);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width:100px;
+    border: 3px solid rgb(109, 99, 136);;
+    border-radius: 50px;
+    margin-top: 20px;
+    height: 40px;
+    font-size: 20px;
+}
+
+/* login.ejs end*/
+
+/* signup.ejs end*/
+.signup_whole {
+    width: 1000px;
+    margin: 0 auto;
+    
+}
+
+.signup_container {
+
+    background-image: url('/images/lemon.jpeg');
+    height: 600px;
+    background-size: cover;
+    text-align: center;
+}
+
+.signup_image_holder h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 30px;
+
+}
+
+.signup_form p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: rgb(151, 146, 209);
+}
+
+.signup {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 40px;
+    border: 3px solid  rgb(162, 238, 221);
+    border-radius: 50px;
+}
+
+.signup_submit {
+     color: rgb(151, 146, 209);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width:100px;
+    border: 3px solid rgb(136, 99, 134);;
+    border-radius: 50px;
+    margin-top: 20px;
+    height: 40px;
+    font-size: 20px;
+}
+/* signup.ejs end*/

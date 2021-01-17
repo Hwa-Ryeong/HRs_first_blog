@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HR's First Blog</title>
+        <link rel="stylesheet"
+        href = "/css/stylesheet.css">
+    </head>
+
+    <body>
+        
+        <nav class="index_nav">
+            <a href="/" class="logo_index">HR's First Blog</a>
+            
+            <a id='index_logout' href='/logout'>Logout</a>
+            <a class="up top_login" href='/login'>Login</a>
+            <a class="up top_post" href="/new">New Post</a>
+            
+
+        </nav>
+
+        <div class="index_container">
+            
+            <div class='container_header'>
+                <h1 class="index_title">
+                    Blog Lists
+                </h1>
+                <a id='index_newpost' href="/new">+New Post</a>
+            </div>
+
+
+            <div class='table_wrapper'>
+                
+                <div class='table_top'>
+                    <span class="intro_list">#</span>
+                    <span class="intro_list">List</span>
+                </div>
+
+                <ul class='table_body'>
+                    <% posts.forEach((post) => { %>
+                    <li>
+                        <div class='blog-data'>
+                            <span class='post post_title'><%= post.title %></span>
+                            <span class='post post_preview'><%= post.preview %></span>
+                            <br>
+                            <span class='post post_date'><%= post.date%></span>
+
+                            <br>
+                            <a href="/edit/<%=post.id%>">edit</a>
+                            
+                            <form action='/delete/<%=post.id%>' method='post'>
+                                <input type='submit' value="delete">
+                            </form>
+
+                    <% });%>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+
+    </body>
+</html>
