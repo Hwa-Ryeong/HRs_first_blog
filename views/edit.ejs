@@ -8,37 +8,32 @@
 
 <body>
   
-    <nav class="edit_nav">
-        <a href="/" class="logo_edit">HR's First Blog</a>
-        
-        <a id='edit_logout' href='#'>Logout</a>
-        <a class="up top_login" href='/login'>Login</a>
-    </nav>
+  <%- include('header'); %>
 
     <div class="edit_whole">
         <div class="edit_container">
-            <h1>Edit Page</h1>
-            <h2>Start Editing</h2>
+            <div class="edit_image_holder">
+                <h1>Edit Page</h1>
+            
+
+                <form class="edit_form" action="/update/<%=post.id%>" method="post">
+                    <p>Title</p>
+                    <input class="edit update_title" name='titleName' value='<%=post.title%>' type="text">
+                
+
+                    <p>Preview</p>
+                    <input class="edit update_preview"  name='previewName' value='<%=post.preview%>' type="text">
+                   
+
+                    <p>Content</p>
+                    <input class="update_content"  name='contentName' value='<%=post.content%>' type="text">
+
+                    <br>
+                    <input class="edit_submit" type='submit' value="update">
+                </form>
+        
+            <div>
         </div>
-
-        <form action="/update/<%=post.id%>" methods="post">
-            Title
-            <input name='itemName' value='<%=post.title%>' type="text">
-            <input type='submit' value="update">
-        </form>
-
-        <form action="/update/<%=post.id%>" methods="post">
-            Preview
-            <input name='itemName' value='<%=post.preview%>' type="text">
-            <input type='submit' value="update">
-        </form>
-
-        <form action="/update/<%=post.id%>" methods="post">
-            Content
-            <input name='itemName' value='<%=post.content%>' type="text">
-            <input type='submit' value="update">
-        </form>
-
     </div>
 
 

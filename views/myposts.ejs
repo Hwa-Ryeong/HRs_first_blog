@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HR's First Blog</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+
+
+<body>
+    <%- include('header') %>
+    <div class='mypost_whole'>
+        <div class="mypost_wrapper">
+            <div class='mypost_image_holder'>
+                <h1><%=locals.username%>'s Posts</h1>
+
+                <div class='mypost_table_wrapper'>
+                
+                    <div class='mypost_table_top'>
+                        <span class="intro_list">#</span>
+                        <span class="intro_list">List</span>
+                    </div>
+
+                        <ul class='mypost_ul'>
+                            <% posts.forEach((post) => { %>
+                                <li>
+                                    <div class='mypost_data'>
+                                        <div class='mypost_spn_container'>
+                                           
+                                       
+                                            
+                                    <% if(isLoggedIn && post.author_id === userId) { %>
+                                            <span class="mypost post_id"></span>
+                                            <span class='mypost post_title'><%= post.title %></span>
+                                            <br>
+                                            <span class='mypost post_preview'><%= post.preview %></span>
+                                            <br>
+                                            <span class='post post_date'><%= post.date%></span>
+
+                                            <br>
+                                            <a class="index_edit" href="/edit/<%=post.id%>">edit</a>
+                                            <a class='index_fullstory' href='/content/<%=post.id%>'>Full Story</a>
+                                            
+                                            <form class='index_form' action='/delete/<%=post.id%>' method='post'>
+                                                <input type='submit' value="delete">
+                                                <%}%>
+                                            </form>
+                                            
+                            <% });%>
+                                        </div>
+                                    </div>
+                            
+                                
+                                
+                                </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

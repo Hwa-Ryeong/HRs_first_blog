@@ -64,6 +64,19 @@ table {
     float: left;
     line-height: 70px;
     opacity: 0.9;    
+    color: black;
+    text-decoration: none;
+}
+
+.top_nav p {
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     float: left;
+     text-align: center;
+     /* border: 3px solid lightsalmon; */
+     margin: 30px 0 0 20px;
+     font-size: 20px;
+     color: rgb(247, 114, 62);
+     letter-spacing: 1px;
 }
 
 .logo_index {
@@ -78,6 +91,10 @@ table {
      text-decoration: none;
      
  }
+ 
+ .my_posts {
+    color: rgb(98, 132, 245);
+ }
 
  .top_to_lists {
      color: rgb(90 173 214);
@@ -91,6 +108,12 @@ table {
 
 .top_login {
     color: rgb(164, 224, 73);     
+}
+
+.top_to_logout {
+    color: rgb(240, 129, 250);
+   background: none;
+   border: none;
 }
 
  .top_nav {
@@ -170,13 +193,18 @@ table {
     padding-top: 20px;
 }
 
-}
+
 .blog_lists {
     background-image: url('/images/index.jpeg');
     height: 800px;
     max-width: 800px;
     background-size: cover;
     margin: 0 auto;
+}
+
+.blog-data{
+    margin: 0 auto;
+    width: 500px;
 }
 
 .index_container {
@@ -196,40 +224,91 @@ table {
 }
 
 .table_top {
-    background-color: rgb(176, 203, 238);
+    background-color: rgb(211, 224, 240);
     text-align: left;
     font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     height: 50px;
-    line-height: 50px;
-
+    line-height: 50px;  
 }
+
 .table_wrapper {
     border: 1px solid orange;
+    border-radius: 50px;
+    overflow: hidden;
     
 }
 
 .table_body {
-    background-color:rgb(217, 235, 247)
+    background-color:rgb(248, 211, 196)
     
 }
 
 .table_body li {
-  height: 100px;
-  border: 3px solid #f0f4f9;
+  min-height: 100px;
+  border-bottom: 3px solid #f0f4f9;
   border-top: none;
   display: flex;
-  justify-content: space-between;
-  justify-content: center;
   align-items: center;
+  width: 100%;
+  line-height: 1.8;
+}
+
+.intro_list {
+    margin-left: 30px;
 }
 
 .post {
-    font-size: 17px;
+    font-size: 18px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(65, 63, 63);
     
 
+}
+
+.post_date {
+   width: 100%;
+   font-size: 13px;
+   text-align: right;
+   display: inline-block;
+}
+
+.index_fullstory {
+    font-size: 15px;
+    text-decoration: none;
+    border: 1px solid rgb(88, 86, 86);
+    background-color: rgb(240, 232, 232);
+    color: rgb(135, 135, 228);
+    float: right;
+    padding: 2px 5px;
+    border-radius: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+.index_edit {
+    font-size: 15px;
+    text-decoration: none;
+    border: 1px solid rgb(88, 86, 86);
+    background-color: rgb(240, 232, 232);
+    color: rgb(0, 255, 149);
+    float: right;
+    padding: 2px 5px;
+    border-radius: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.index_form input{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    color: rgb(221, 151, 212);
+    float: right;
+    padding: 2px 5px;
+    border-radius: 50px;
+    border: 1px solid rgb(88, 86, 86);
+    text-decoration: none;
+    background-color: rgb(240, 232, 232);
+    height: 33px;
 }
 /* index.eks end */
 
@@ -398,7 +477,7 @@ table {
 }
 
 .signup_submit {
-     color: rgb(151, 146, 209);
+    color: rgb(151, 146, 209);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width:100px;
     border: 3px solid rgb(136, 99, 134);;
@@ -408,3 +487,222 @@ table {
     font-size: 20px;
 }
 /* signup.ejs end*/
+
+/* edit.ejs start*/
+
+.edit_whole {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+.edit_container {
+    background-image: url('/images/edit.jpeg');
+    height: 650px;
+    background-size: cover;
+    text-align: center;
+}
+
+.edit_image_holder {
+    height: 100%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.edit_image_holder h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 30px;
+}
+
+.edit_form p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color:  rgb(215, 231, 126);
+}
+
+.edit {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 40px;
+    border: 3px solid  black;
+    border-radius: 50px;
+}
+
+.update_content {
+    margin-bottom: 20px;
+    width: 500px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 50px;
+
+}
+
+.edit_submit {
+  
+    color: rgb(151, 146, 209);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width:100px;
+    border: 3px solid rgb(136, 99, 134);;
+    border-radius: 50px;
+    margin-top: 20px;
+    height: 40px;
+    font-size: 20px;
+
+}
+
+
+
+
+/* edit.ejs end*/
+
+
+/* content.ejs start*/
+.content_whole {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.content_wrapper {
+    background-image: url('/images/lemon.jpeg');
+    min-height: 600px;
+    background-size: cover;
+    text-align: center;
+}
+
+.content_image_holder {
+    height: 100%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.content_image_holder h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    font-size: 40px;
+    padding: 20px;
+    margin-bottom: 30px;
+
+}
+
+.full_story {
+    width: 700px;
+    margin: 0 auto;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    min-height: 300px;
+    line-height: 1.5;
+    border: 3px solid rgb(63, 56, 122);
+    padding: 20px;
+    color: rgb(236, 125, 60);
+    font-weight: bold;
+    background: rgba(243, 241, 219, 0.5);
+}
+
+.full_story span {
+    font-size: 15px;
+}
+/* content.ejs end*/
+
+/* mypost.ejs start*/
+.mypost_whole {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.mypost_wrapper {
+    background-image: url('#');
+    height: 600px;
+    background-size: cover;
+    text-align: center;
+}
+
+.mypost_image_holder {
+    height: 100%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.mypost_table_wrapper {
+    border: 1px solid orange;
+    border-radius: 50px;
+    overflow: hidden;    
+}
+
+.mypost_table_top {
+    background-color: rgb(211, 224, 240);
+    text-align: left;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 50px;
+    line-height: 50px;  
+}
+
+
+.mypost_ul {
+    background-color:rgb(248, 211, 196)
+    
+}
+
+.mypost_image_holder h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    font-size: 40px;
+    padding: 20px;
+    
+
+}
+
+/* .mypost_ul {
+    border: 3px solid rgb(63, 56, 122);
+    height: 100%;
+    width: 700px;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+     color: rgb(236, 125, 60);
+    font-weight: bold;
+    background: rgba(243, 241, 219, 0.5); 
+    padding: 20px; */
+    
+    /* width: 700px;
+    margin: 0 auto;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    line-height: 1.5;
+
+    padding: 20px;
+   */
+   
+/* } */
+
+
+/* mypost.ejs end*/
+
+.mypost_ul li {
+  min-height: 100px;
+  border-bottom: 3px solid #f0f4f9;
+  border-top: none;
+  text-align: left;
+  width: 100%;
+  line-height: 1.8;
+  display: flex;
+}
+
+
+
+.mypost_data {
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(65, 63, 63);
+    width: 500px;
+    margin: 0 auto;
+   
+    
+
+}

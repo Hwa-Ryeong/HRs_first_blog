@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HR's First Blog</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+
+<body>
+    <%-include('header'); %>
+
+    <div class='content_whole'>
+        <div class='content_wrapper'>
+            <div class='content_image_holder'>
+                <h1>Full Story</h1>
+               <p class='full_story'><%=posts.content%> 
+                    <br>
+                    <br>
+                    <span><%=posts.date%></span>
+                </p> 
+
+      
+               <a href="/edit/<%=posts.id%>">Edit</a>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

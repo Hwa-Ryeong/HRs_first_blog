@@ -1,0 +1,24 @@
+<nav class="index_nav">
+    <nav class='top_nav'>
+        <a href='/' class="top_logo">HR's First Blog</a>
+        <p>Welcome  <%=locals.username%></p>
+    
+        <% if (locals.isLoggedIn) { %>
+        <form action='/logout' method='post'>
+            <input class="up top_to_logout" type='submit' value='Logout'>
+        </form>
+        <a class="up top_post" href="/new">New Post</a>
+        <a class="up top_to_lists" href="/index">Blog Lists</a>
+      
+        <a class="up my_posts" href="/myposts"><%=locals.username%>'s Blog</a>
+        <% } else {%>
+        <a class="up top_signup" href='/signup'>SignUp</a>
+        <a class="up top_login" href='/login'>Login</a>
+        <a class="up top_post" href="/new">New Post</a>
+        <a class="up top_to_lists" href="/index">Blog Lists</a>
+        <% } %>
+    
+    </nav>
+
+</nav>
+

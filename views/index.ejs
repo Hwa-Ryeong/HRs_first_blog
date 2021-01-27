@@ -7,8 +7,8 @@
     </head>
 
     <body>
-        
-        <nav class="index_nav">
+        <%- include('header') %>
+        <!-- <nav class="index_nav">
             <a href="/" class="logo_index">HR's First Blog</a>
             
             <a id='index_logout' href='/logout'>Logout</a>
@@ -16,7 +16,7 @@
             <a class="up top_post" href="/new">New Post</a>
             
 
-        </nav>
+        </nav> -->
 
         <div class="index_container">
             
@@ -39,18 +39,27 @@
                     <% posts.forEach((post) => { %>
                     <li>
                         <div class='blog-data'>
-                            <span class='post post_title'><%= post.title %></span>
-                            <span class='post post_preview'><%= post.preview %></span>
-                            <br>
-                            <span class='post post_date'><%= post.date%></span>
+                            <div class='spn_container'>
+                                <span class='post post_title'><%= post.title %></span>
+                                <span class='post post_preview'><%= post.preview %> by <%= post.username%></span>
+                                <br>
+                                <span class='post post_date'><%= post.date%></span>
+                            </div>
+                            <% if(isLoggedIn && userId == post.author_id) { %>
+                                <form class='index_form' action='/delete/<%=post.id%>' method='post'>
+                                
+                                    <input type='submit' value="delete">
+                                </form>
+                                <a class="index_edit" href="/edit/<%=post.id%>">edit</a>
+                             
+                                <a class='index_fullstory' href='/content/<%=post.id%>'>Full Story</a>
+                               
+                            <% } else { %>
 
-                            <br>
-                            <a href="/edit/<%=post.id%>">edit</a>
-                            
-                            <form action='/delete/<%=post.id%>' method='post'>
-                                <input type='submit' value="delete">
-                            </form>
+                                <a class='index_fullstory' href='/content/<%=post.id%>'>Full Story</a>
+                            <%}%>
 
+                            <br>                       
                     <% });%>
                         </div>
                     </li>
