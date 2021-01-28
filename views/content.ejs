@@ -19,9 +19,9 @@
                     <span><%=posts.date%></span>
                 </p> 
 
-      
+      <% if(isLoggedIn && post.author_id === userId) {%>
                <a href="/edit/<%=posts.id%>">Edit</a>
-
+    <%}%>
             </div>
         </div>
     </div>
