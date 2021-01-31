@@ -163,7 +163,7 @@ app.post('/login', (req, res)=> {
                 })
                 bcrypt.hash('sa', 10, (error, hash) => {
                     console.log('attempt 2 hash: ', hash);
-               k })
+                })
                 
                 bcrypt.compare(req.body.password, results[0].password, (error, isSame) => {
                     console.log('password', req.body.password);
