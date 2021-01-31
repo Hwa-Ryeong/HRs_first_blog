@@ -1,0 +1,11 @@
+{
+  "name": "HR's first blog",
+  "description": "",
+  "version": "1.0.0",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mysql": "^2.18.1"
+  }
+}
