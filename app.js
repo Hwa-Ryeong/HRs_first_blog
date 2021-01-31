@@ -273,7 +273,7 @@ app.get('/content/:id', (req, res)=> {
         (error, results) => {
             console.log(error);
             console.log('result: ', results);
-            res.render('content.ejs', {posts: results[0]});
+            res.render('content.ejs', {post: results[0]});
         }
     )
 });

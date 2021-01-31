@@ -13,14 +13,14 @@
         <div class='content_wrapper'>
             <div class='content_image_holder'>
                 <h1>Full Story</h1>
-               <p class='full_story'><%=posts.content%> 
+               <p class='full_story'><%=post.content%> 
                     <br>
                     <br>
-                    <span><%=posts.date%></span>
+                    <span><%=post.date%></span>
                 </p> 
 
       <% if(isLoggedIn && post.author_id === userId) {%>
-               <a href="/edit/<%=posts.id%>">Edit</a>
+               <a href="/edit/<%=post.id%>">Edit</a>
     <%}%>
             </div>
         </div>
